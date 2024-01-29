@@ -1,0 +1,41 @@
+.table{
+    width: 100%;
+
+    thead{
+        tr {
+            @media (max-width: 1024px) { 
+                padding: 8px 0;
+            }
+            
+            @media (min-width: 1025px) { 
+                padding: 12px 0;
+            }
+        }
+    }
+
+    tr {
+        display: flex;
+        border-bottom: 1px solid gray;
+        align-items: center;
+        
+
+        td, th {
+            text-align: center;
+            @media (max-width: 1024px) { 
+                width: 10%; 
+            }
+            
+            @media (min-width: 1025px) { 
+                width: 14.28%;
+            }
+        }
+    }
+}
+
+button{
+    appearance: none;
+    background: none;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Tipo de documento</th>
+            <th>Documento</th>
+            <th>Matricula</th>
+            <th>Cod. banco</th>
+            <th>Agência</th>
+            <th>Conta</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let b of bolsistasList, index i">
+            <td>{{b.nome}}</td>
+            <td>{{b.tipo_id}}</td>
+            <td>{{b.num_id}}</td>
+            <td type="datetime-local">{{b.data_matricula | date:'dd/MM/yyyy'}}</td>
+            <td>{{b.cod_banco}}</td>
+            <td>{{b.num_agencia}}</td>
+            <td>{{b.num_conta}}</td>
+            <td><button (click)="deleteBolsista(b.id_bolsista)"><mat-icon>delete_forever</mat-icon></button></td>
+        </tr>
+    </tbody>
+</table>

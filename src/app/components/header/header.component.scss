@@ -1,0 +1,51 @@
+@mixin breakpoint($name) {
+    @if $name == “small” {
+     @media (max-width: 767px) {
+      @content;
+   }
+  }
+    @else if $name == “medium” { 
+      @media (max-width: 1024px) { 
+       @content; 
+     } 
+    } 
+    @else if $name == “large” { 
+      @media (max-width: 1025px) { 
+       @content; 
+      } 
+    } 
+  }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 12px;
+    background-color: #4682B4;
+
+       p{
+        color: white;
+
+        @media (max-width: 1024px) { 
+            font-size: 24px;  
+        }
+        
+        @media (min-width: 1025px) { 
+            font-size: 32px;  
+        }
+        
+    }
+
+    button{
+        background-color: cadetblue;
+        border-radius: 9px;
+        border: 1px solid transparent;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #4682B4;
+        border: 1px solid black;
+        color: #fff
+    }
+}

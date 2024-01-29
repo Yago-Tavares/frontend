@@ -1,0 +1,8 @@
+<div class="container">
+    <p>Lista de bolsistas</p>
+    <button (click)="modal.toggle()">Adicionar bolsista</button>
+</div>
+<app-modal #modal>
+<h1>Adicionar novo bolsista</h1>
+  <app-bolsista-form></app-bolsista-form>
+</app-modal> 

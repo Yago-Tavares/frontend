@@ -1,0 +1,27 @@
+<form (ngSubmit)="submit()" [formGroup]="bolsistaForm">
+    <div class="itemContainer">
+        <label for="nome">Nome:</label>
+        <input type="text" placeholder="Nome completo" formControlName="nome" required/>
+    </div>
+    <div class="itemContainer">
+        <label for="num_documento">Numero do documento:</label>
+        <input type="number" formControlName="num_id" required/>
+    </div>
+    <div class="itemContainer">
+        <label for="data">Data da matrícula:</label>
+        <input type="text" placeholder="dd/mm/aaaa" formControlName="data_matricula" required/>
+    </div>
+    <div class="itemContainer">
+        <label for="banco">Código do banco:</label>
+        <input type="number" formControlName="cod_banco" required/>
+    </div>
+    <div class="itemContainer">
+        <label for="agencia">Número da agência:</label>
+        <input type="number" formControlName="num_agencia" required/>
+    </div>
+    <div class="itemContainer">
+        <label for="conta">Número da conta:</label>
+        <input type="number" formControlName="num_conta" required/>
+    </div>
+    <input class="addbtn" type="submit" value="Criar" />
+</form>

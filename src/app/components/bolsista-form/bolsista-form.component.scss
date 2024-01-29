@@ -1,0 +1,43 @@
+form {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.itemContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+
+    label{
+        font-weight: bold;
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+
+    input { 
+        padding: 4px;
+        color: #777;
+        font-size: 0.8em;
+    }
+
+    .addbtn {
+        background-color: cadetblue;
+        border-radius: 9px;
+        border: 1px solid transparent;
+        color: white;
+    }
+    
+}
+.addbtn {
+    background-color: cadetblue;
+    border-radius: 9px;
+    border: 1px solid transparent;
+    color: white;
+    padding: 4px 12px;
+}
+
+.addbtn:hover {
+    background-color: #4682B4;
+    border: 1px solid black;
+    color: #fff;
+}
